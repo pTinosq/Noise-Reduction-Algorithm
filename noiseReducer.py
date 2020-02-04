@@ -3,7 +3,7 @@ import math
 import time
 import statistics
 from PIL import Image, ImageEnhance
-
+path = input("Path: ")
 loops = int(input("Loops: "))
 
 for z in range(loops):
@@ -11,10 +11,8 @@ for z in range(loops):
     if z > 0:
         im = Image.open(f"noiseNull{z}.jpg")
     else:
-        im = Image.open("original.jpg")
+        im = Image.open(path)
     width, height = im.size
-    contrast = ImageEnhance.Contrast(im)
-    #im =contrast.enhance(3)
     rgb_im = im.convert('RGB')
 
     img = Image.new( 'RGB', (width,height), "black") # create a new black image
