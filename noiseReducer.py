@@ -107,3 +107,4 @@ for z in range(loops):
     print(f"Time taken: {timeCurrent - timeStart}")
 
     img.save(f"./noiseNull{z + 1}.jpg")
+input("Press any key to close")
