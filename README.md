@@ -27,3 +27,6 @@ Once completed it will show the final image and then it will save it in the same
 - The image will end up getting blurred after too many passes
 - Large areas of noise will not be removed but smoothened out
 - After the 7-10th passes there is no significant change to the image
+
+# Examples
+![Example image with passes](https://i.imgur.com/c6hr7iB.png)
